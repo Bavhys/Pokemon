@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manga de Pokemon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #771d1d; /* Fondo rojo */
+      padding: 20px;
+      margin: 0;
+      position: relative;
+      color: #f7d72f; /* Color de texto amarillo */
+    }
+
+    /* Borde amarillo con patrones de Pokéballs */
+    body::before, body::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    /* Borde superior e inferior */
+    body::before {
+      background-color: #f9d72f; /* Color amarillo */
+      height: 10px;
+      left: 0;
+      right: 0;
+      top: -10px;
+    }
+
+    /* Borde izquierdo y derecho */
+    body::after {
+      background-color: #f9d72f; /* Color amarillo */
+      width: 10px;
+      top: 0;
+      bottom: 0;
+      left: -10px;
+    }
+
+    /* Fondo de los bordes con Pokéballs */
+    .border-pokeballs {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('pokeball-decoracion.png'); /* Imagen de Pokéball */
+      background-repeat: repeat;
+      z-index: -2; /* Asegura que este patrón esté detrás del contenido */
+    }
+
+    /* Estilo para el contenido central */
+    .content-container {
+      background-color: #f7a9d1; /* Fondo rosa */
+      border-radius: 15px;
+      padding: 30px;
+      margin: 0 auto;
+      max-width: 1000px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #f7d72f; /* Color amarillo */
+      text-shadow: 3px 3px 5px #1e2b68, -1px -1px 0 #1e2b68, 1px -1px 0 #1e2b68, -1px 1px 0 #1e2b68, 1px 1px 0 #1e2b68;
+    }
+
+    /* Estilización de la descripción */
+    p {
+      font-size: 18px;
+      color: #f7d72f; /* Color amarillo */
+      text-align: center;
+      line-height: 1.6;
+      font-weight: bold;
+      margin-top: 20px;
+      text-shadow: 2px 2px 5px #1e2b68; /* Borde azul alrededor del texto */
+    }
+
+    .link-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .link-list li {
+      margin: 10px 0;
+    }
+
+    .link-list a {
+      text-decoration: none;
+      color: #f7d72f; /* Color amarillo */
+      text-shadow: 2px 2px 5px #1e2b68; /* Borde azul alrededor del texto */
+    }
+
+    .link-list a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    /* Estilos para los números de los tomos con borde azul en las letras */
+    .tomo-label {
+      display: block;
+      text-align: center;
+      font-size: 30px;
+      font-family: 'Pokemon', sans-serif;
+      color: #f7d72f; /* Color amarillo */
+      font-weight: bold;
+      text-shadow: 
+        2px 2px 0 #1e2b68,  /* Sombra azul alrededor de la letra */
+        -2px -2px 0 #1e2b68, 
+        2px -2px 0 #1e2b68,
+        -2px 2px 0 #1e2b68;   /* Efecto del borde azul alrededor del texto */
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decoración de los bordes con Pokéballs -->
+  <div class="border-pokeballs"></div>
+
+  <!-- Contenedor del contenido central -->
+  <div class="content-container">
+    <!-- Encabezado -->
+    <h1>Pokemon Adventures</h1>
+
+    <!-- Descripción -->
+    <p>Bienvenido a la lista de tomos del manga de Pokemon Adventures. Haz clic en las imágenes para ver más detalles.</p>
+
+    <!-- Lista de tomos -->
+
+    <!-- Tomo 1 -->
+    <span class="tomo-label">Tomo 1</span>
+    <a href="https://pokemon-project.com/manga/pokemon-adventures/volumen-1" target="_blank">
+      <img src="tomo1.jpg" alt="Tomo 1">
+    </a>
+
+    <!-- Tomo 2 -->
+    <span class="tomo-label">Tomo 2</span>
+    <a href="https://pokemon-project.com/manga/pokemon-adventures/volumen-2" target="_blank">
+      <img src="tomo2.jpg" alt="Tomo 2">
+    </a>
+
+    <!-- Tomo 3 -->
+    <span class="tomo-label">Tomo 3</span>
+    <a href="https://pokemon-project.com/manga/pokemon-adventures/volumen-3" target="_blank">
+      <img src="tomo3.jpg" alt="Tomo 3">
+    </a>
+
+    <!-- Tomo 4 -->
+    <span class="tomo-label">Tomo 4</span>
+    <a href="https://pokemon-project.com/manga/pokemon-adventures/volumen-4" target="_blank">
+      <img src="tomo4.jpg" alt="Tomo 4">
+    </a>
+
+    <!-- Tomo 5 -->
+    <span class="tomo-label">Tomo 5</span>
+    <a href="https://pokemon-project.com/manga/pokemon-adventures/volumen-5" target="_blank">
+      <img src="tomo5.jpg" alt="Tomo 5">
+    </a>
+  
+    <!-- Tomo 6 -->
+    <span class="tomo-label">Tomo 6</span>
+    <a href="https://pokemon-project.com/manga/pokemon-adventures/volumen-6" target="_blank">
+      <img src="tomo6.jpg" alt="Tomo 6">
+    </a>
+
+    <!-- Tomo 7 -->
+    <span class="tomo-label">Tomo 7</span>
+    <a href="https://pokemon-project.com/manga/pokemon-adventures/volumen-7" target="_blank">
+      <img src="tomo7.jpg" alt="Tomo 7">
+    </a>
+  </div>
+
+</body>
+</html>
